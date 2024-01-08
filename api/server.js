@@ -59,7 +59,7 @@ app.use("/api", accountRoutes);
 app.use("/api", editAccountRoutes);
 app.use("/api", taskRoutes);
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "clientBuild", "index.html"));
+  res.sendFile(path.join(__dirname, "client", "index.html"));
 });
 
 app.listen(port, () => {
