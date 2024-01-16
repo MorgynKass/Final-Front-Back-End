@@ -26,7 +26,11 @@ app.use(express.static(path.join(__dirname, "clientBuild")));
 //ADD YOUR URL HERE
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://localhost:5001"],
+    origin: [
+      "http://localhost:3000",
+      "https://localhost:5001",
+      "http://localhost:5173",
+    ],
     methods: ["POST", "PUT", "GET", "OPTIONS", "HEAD", "DELETE", "PATCH"],
     credentials: true,
   })
