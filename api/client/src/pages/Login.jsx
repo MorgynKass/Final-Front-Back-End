@@ -33,7 +33,7 @@ const Auth = () => {
   return (
     <div className="container">
       <form
-        // className="form"
+        className="form"
         action="submit"
         onSubmit={(e) => e.preventDefault()}
       >

@@ -10,6 +10,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 
+import "../styles/Register.scss";
+
 const Register = () => {
   const Error = ({ error }) => {
     return (
@@ -36,8 +38,9 @@ const Register = () => {
   });
 
   return (
-    <div>
+    <div className="container">
       <form
+        className="form"
         action="submit"
         onSubmit={handleSubmit((d) =>
           registerUser(d, {
@@ -50,21 +53,28 @@ const Register = () => {
             },
           })
         )}
-        className="sign-up-form"
       >
-        <div className="sign-up-card">
+        <div className="sign-up-container">
           <h2>Sign Up</h2>
-          <span>Email :</span>
-          <input type="email" autoComplete="email" {...register("email")} />
+
+          <input
+            placeholder="Email"
+            type="email"
+            autoComplete="email"
+            {...register("email")}
+          />
           <Error error={errors?.email?.message} />
-          <span>Password :</span>
-          <input type="password" {...register("password")} />
+          <input
+            placeholder="Password"
+            type="password"
+            {...register("password")}
+          />
           <Error error={errors?.password?.message} />
 
           {/* REGISTER BTN */}
           <button type="submit">Create Account</button>
         </div>
-        <Link to="/" style={{ textAlign: "center" }}>
+        <Link to="/auth" style={{ textAlign: "center" }}>
           Back to sign in
         </Link>
       </form>

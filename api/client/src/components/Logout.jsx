@@ -10,8 +10,8 @@ const LogOutBtn = () => {
   const nav = useNavigate();
 
   return (
-    <div>
-      <button
+    <div className="logout-div">
+      <button className="logout-btn"
         onClick={() =>
           logout(null, {
             onSuccess: () => {

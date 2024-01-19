@@ -28,8 +28,8 @@ const CreateTask = () => {
   });
 
   return (
-    <div>
-      <form
+    <div className="add-task-container" >
+      <form className="add-form"
         action="submit"
         onSubmit={handleSubmit((d) =>
           createtask(d, {
@@ -38,12 +38,16 @@ const CreateTask = () => {
             },
           })
         )}
-        className="create-task-form"
       >
-        <div className="add" style={{ backgroundColor: "green" }}>
-          <input type="text" placeholder="Add Task" {...register("task")} />
-          <button onClick={refreshPage}>
-            <IoIosAddCircleOutline />
+        <div>
+          <input
+            type="text"
+            className="add-input"
+            placeholder="Add Task"
+            {...register("task")}
+          />
+          <button className="add-btn" onClick={refreshPage}>
+            <IoIosAddCircleOutline className="add-icon" />
           </button>
         </div>
       </form>
