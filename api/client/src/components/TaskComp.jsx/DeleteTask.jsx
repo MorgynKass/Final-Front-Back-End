@@ -2,6 +2,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable no-unused-vars */
 
+// DELETE BUTTON AND FUNCTONALITY
+
 import { queryClient } from "../../constants/config";
 import { useState, useEffect } from "react";
 import { useDeleteTask } from "../../queries/tasks";

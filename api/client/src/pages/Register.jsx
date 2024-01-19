@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
+
 // REGISTRATION PAGE - CREATE AN ACCOUNT
 
 import { Link } from "react-router-dom";

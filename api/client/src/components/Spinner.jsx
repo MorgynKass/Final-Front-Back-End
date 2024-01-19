@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+
+// SPINNER FOR WHEN THINGS ARE LOADING
 import styles from "../styles/Spinner.module.scss";
 
 const Spinner = ({ fullPage, background }) => {

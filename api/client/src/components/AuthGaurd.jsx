@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+
+// CHECKS WHICH SITE YOU ARE AT AND REDIRECTS YOU ACCORDINGLY
 import { useEffect } from "react";
 import { useCurrent } from "../queries/account";
 import { queryClient } from "../constants/config";

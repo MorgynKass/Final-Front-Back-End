@@ -1,6 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable no-unused-vars */
 
+// LOGOUT BUTTON
+
 import { queryClient } from "../constants/config";
 import { useNavigate } from "react-router-dom";
 import { useLogout } from "../queries/account";
