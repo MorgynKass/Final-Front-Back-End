@@ -7,3 +7,4 @@ The client folder contain all of the frontend files.
 
 Branch "back-end" is the code I created for my backend.
 Branch "front-end" is the code I created for my front-end.
+Branch "styles" is the code I created to style my app.
